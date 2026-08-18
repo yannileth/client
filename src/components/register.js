@@ -25,7 +25,7 @@ function Registrar() {
 
     const manipularBotao = async () => {
         try {
-            const response = await
+            await axios.post 
                 axios.post('http://localhost:5000/registrar', {
                     nome: nome,
                     email: email,
